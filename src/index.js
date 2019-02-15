@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import Chart from 'chart.js';
 import isEqual from 'lodash/isEqual';
 import keyBy from 'lodash/keyBy';
+import { GroupableBar } from "./GroupableBar";
 
 const NODE_ENV = (typeof process !== 'undefined') && process.env && process.env.NODE_ENV;
 
@@ -382,6 +383,8 @@ export class Scatter extends React.Component {
     );
   }
 }
+
+export GroupableBar;
 
 export const defaults = Chart.defaults;
 export {Chart};
